@@ -1,0 +1,158 @@
+/* * {
+  border: solid black;
+} */
+body {
+  background: black;
+}
+
+#stay {
+  max-width: 103px;
+  max-height: 100px;
+}
+.top {
+  background: black;
+  height: 120px;
+
+  display: flex;
+  flex-direction: center;
+  justify-content: space-around;
+  align-content: center;
+}
+.header {
+  display: flex;
+  background: black;
+  flex-direction: column;
+  justify-content: space-around;
+  float: right;
+  width: 100%;
+  height: 120px;
+}
+
+#app {
+  height: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: right;
+  justify-content: space-around;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#aether {
+  width: 100px;
+  height: 100px;
+  /* background-image: url(https://media.cargocollective.com/1/9/309196/headerimg/alchemysquaredcircle.png); */
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+}
+
+.ads {
+  display: flex;
+  flex-direction: right;
+  width: 500px;
+  height: 650px;
+  justify-content: space-around;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: right;
+  justify-content: space-around;
+  width: 500px;
+  height: 650px;
+  background-image: url(Middle.png);
+  background-size: cover;
+  text-align: center;
+  animation: topleft background-image 2s ;
+  animation-iteration-count: 1;
+  animation-play-state:paused
+}
+
+.nav {
+  display: flex;
+  flex-direction: right;
+  justify-content: space-around;
+  width: 500px;
+  height: 650px;
+}
+
+.nav-contents {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  background-color: none;
+  transition: 2s;
+  
+
+}
+
+.nav-contents:hover {
+  transition: 2s;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 20px;
+  transform: rotate(0deg);
+  box-shadow: 0px 10px 5px #aaaaaa;
+  
+}
+
+#work {
+  transform: rotate(6deg);
+  position: relative;
+}
+
+#work:hover {
+  transform: rotate(0deg);
+  z-index: 1;
+  animation: topleft;
+  animation-play-state: running;
+}
+@keyframes topleft {
+  from{background-image: none;}
+  to{background-image: url(Bottom\ Left\ )}
+}
+
+#edu {
+  transform: rotate(-5deg);
+  position: relative;
+}
+#edu:hover {
+  transform: rotate(0deg);
+  z-index: 1;
+}
+#hobbies {
+  transform: rotate(-7deg);
+  position: relative;
+  background-image: url(polaroid2.png);
+  right: 10px;
+}
+#hobbies:hover {
+  transform: rotate(0deg);
+  z-index: 1;
+}
+#poet. {
+  transform: rotate(3deg);
+  position: relative;
+  left: -20px;
+  background-image: url(https://i.pinimg.com/originals/ee/94/39/ee9439a9a1152c0c4ce4d6aafbcd8969.jpg);
+  padding: 0px 10px 10px 0px;
+  background-size: 150px 100px;
+  background-repeat: no-repeat;
+}
+#poet:hover {
+  transform: rotate(0deg);
+  z-index: 1;
+  background-size: 200px 150px;
+}
+
+.polaroid {
+  background-size: cover;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+}
