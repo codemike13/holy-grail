@@ -41,7 +41,7 @@ body {
 #aether {
   width: 100px;
   height: 100px;
-  /* background-image: url(https://media.cargocollective.com/1/9/309196/headerimg/alchemysquaredcircle.png); */
+  background-image: url(https://media.cargocollective.com/1/9/309196/headerimg/alchemysquaredcircle.png);
   background-repeat: no-repeat;
   background-size: 100px 100px;
 }
@@ -54,102 +54,124 @@ body {
   justify-content: space-around;
 }
 
-.main-content {
+.main {
   display: flex;
   flex-direction: right;
   justify-content: space-around;
   width: 500px;
   height: 650px;
-  background-image: url(Middle.png);
+  background-image: url(mike.png);
   background-size: cover;
   text-align: center;
-  animation: topleft background-image 2s ;
-  animation-iteration-count: 1;
-  animation-play-state:paused
+  z-index: ;
+}
+
+#main {
 }
 
 .nav {
   display: flex;
-  flex-direction: right;
+  flex-direction: column;
   justify-content: space-around;
   width: 500px;
   height: 650px;
 }
-
-.nav-contents {
+.nav-tabs {
+  color: white;
+  text-align: center;
+  height: 200px;
+  perspective: 1000px;
+  transition: 2s;
+}
+#tab1:hover {
+  height:400px;
+  transition: 2s;
+  transform: rotateY(20deg);
+  transform-origin: center left;
+  box-shadow: 30px 5px 20px 5px rgba(255, 255, 255, 0.6);
+  z-index: 3;
+}
+#tab2:hover {
+  transition: 3s;
+  transform: rotateY(20deg);
+  height:400px;
+  transform-origin: center left;
+  box-shadow: 30px 5px 20px 5px rgba(255, 255, 255, 0.6);
+}
+#tab3:hover {
+  transition: 3s;
+  transform: rotateY(20deg);
+  height:400px;
+  transform-origin: center left;
+  box-shadow: 30px 5px 20px 5px rgba(255, 255, 255, 0.6);
+}
+#tab4:hover {
+  transition: 3s;
+  transform: rotateY(20deg);
+  height:400px;
+  transform-origin: center left;
+  box-shadow: 30px 5px 20px 5px rgba(255, 255, 255, 0.6);
+}
+.main-contents {
   display: flex;
   width: 150px;
   height: 150px;
   border: 1px solid white;
   background-color: none;
   transition: 2s;
-  
-
-}
-
-.nav-contents:hover {
-  transition: 2s;
-  width: 200px;
-  height: 200px;
-  position: relative;
-  left: 20px;
-  transform: rotate(0deg);
-  box-shadow: 0px 10px 5px #aaaaaa;
-  
 }
 
 #work {
-  transform: rotate(6deg);
+  display:flex;
+  flex-direction: column;
+  font-family: fantasy;
+  transform: rotate(-6deg);
   position: relative;
+  left: -60px;
+  background: rgba(255,255,255,.5);
+  padding: 10px 10px 20px 10px;
+  text-align: center;
 }
 
+#work img{
+  width:150px;
+  height:140px;
+}
 #work:hover {
   transform: rotate(0deg);
   z-index: 1;
-  animation: topleft;
-  animation-play-state: running;
-}
-@keyframes topleft {
-  from{background-image: none;}
-  to{background-image: url(Bottom\ Left\ )}
 }
 
 #edu {
   transform: rotate(-5deg);
   position: relative;
+  bottom: -300px;
+  left: -60px;
 }
 #edu:hover {
   transform: rotate(0deg);
   z-index: 1;
 }
 #hobbies {
-  transform: rotate(-7deg);
+  transform: rotate(7deg);
   position: relative;
-  background-image: url(polaroid2.png);
-  right: 10px;
+  bottom: -450px;
 }
 #hobbies:hover {
   transform: rotate(0deg);
   z-index: 1;
 }
-#poet. {
+#poet {
   transform: rotate(3deg);
   position: relative;
-  left: -20px;
-  background-image: url(https://i.pinimg.com/originals/ee/94/39/ee9439a9a1152c0c4ce4d6aafbcd8969.jpg);
-  padding: 0px 10px 10px 0px;
-  background-size: 150px 100px;
-  background-repeat: no-repeat;
+  left: -5px;
+  top: -150px;
 }
 #poet:hover {
   transform: rotate(0deg);
   z-index: 1;
-  background-size: 200px 150px;
 }
 
-.polaroid {
-  background-size: cover;
-}
 .footer {
   display: flex;
   justify-content: space-around;
